@@ -1,0 +1,131 @@
+/* Ümumi Səhifə Stili */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Saytın Yuxarı Hissəsi */
+.header {
+    background-color: #004085;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+.header p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.85;
+}
+
+/* Əsas Forma Qutusu */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    flex-grow: 1;
+}
+
+/* Məqsədi İzah Edən Mətn */
+.description {
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f2f5;
+}
+
+.description strong {
+    color: #004085;
+    font-size: 18px;
+}
+
+/* Forma Elementləri */
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+.required::after {
+    content: " *";
+    color: #dc3545;
+    font-size: 16px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fcfcfc;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #004085;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 64, 133, 0.1);
+    outline: none;
+}
+
+/* Təsdiq Düyməsi */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Altlıq - Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 13px;
+    margin-top: auto;
+}

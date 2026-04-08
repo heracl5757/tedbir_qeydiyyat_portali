@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitet Tədbir Portalı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Tədbir Qeydiyyat Portalı</h1>
+    <p>Tələbə cəmiyyətinə qoşul, fəal ol!</p>
+</div>
+
+<div class="container">
+    <div class="description">
+        <strong>Xoş gəlmisiniz!</strong><br>
+        Universitet daxilində keçirilən seminarlara, praktiki məşğələlərə və sosial tədbirlərə bu portal vasitəsilə yazıla bilərsiniz. Məlumatlarınızı düzgün daxil etdiyinizdən əmin olun.
+    </div>
+    
+    <form id="registrationForm" action="qeydiyyat.php" method="POST">
+        <div class="form-group">
+            <label for="ad" class="required">Adınız</label>
+            <input type="text" id="ad" name="ad" placeholder="Məsələn: İlkin" required>
+        </div>
+
+        <div class="form-group">
+            <label for="soyad" class="required">Soyadınız</label>
+            <input type="text" id="soyad" name="soyad" placeholder="Məsələn: Məmmədov" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="required">Universitet Emailiniz</label>
+            <input type="email" id="email" name="email" placeholder="ad.soyad@telebe.edu.az" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tedbir" class="required">Hansı tədbirə qatılmaq istəyirsiniz?</label>
+            <select id="tedbir" name="tedbir_id" required>
+                <option value="" disabled selected>-- Zəhmət olmasa siyahıdan seçin --</option>
+                <option value="1">Kiber Təhlükəsizlik və Linux Əsasları (15 Aprel)</option>
+                <option value="2">Şahmat Turniri (20 Aprel)</option>
+                <option value="3">Karyera Planlaması Seminarı (5 May)</option>
+            </select>
+        </div>
+
+        <button type="submit">Qeydiyyatı Tamamla</button>
+    </form>
+</div>
+
+<div class="footer">
+    &copy; 2026 | Hazırladı: Ilkin Huseynzada | Tələbə İdarəetmə Sistemi Layihəsi
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
